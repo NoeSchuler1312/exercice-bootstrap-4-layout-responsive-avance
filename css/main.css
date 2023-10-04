@@ -1,13 +1,5 @@
-/* ====================================
-// css variables
-// ==================================== */
-
 :root {
 }
-
-/* ====================================
-// reset rules
-// ==================================== */
 
 * {
   box-sizing: border-box;
@@ -26,6 +18,19 @@ body {
 
   font-size: 1rem;
   line-height: 1.25;
+  font-family: sans-serif;
+}
+
+.row + .row {
+  margin-top: 16px;
+}
+
+.row > .col,
+.row > [class^="col-"] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2);
 }
 
 a {
@@ -37,4 +42,16 @@ video {
   max-inline-size: 100%;
   block-size: auto;
   vertical-align: middle;
+}
+
+.row-2 {
+  justify-content: center;
+}
+
+.row-4 {
+  justify-content: center;
+}
+
+.row-5 {
+  justify-content: center;
 }
